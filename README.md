@@ -1,6 +1,16 @@
+**Table of Contents**
+
+- [Good-Scribe](#good-scribe)
+  - [Usage](#usage)
+  - [Good Scribe](#good-scribe)
+    - [new GoodScribe (options, events)](#new-goodscribe-options-events)
+    - [GoodScribe Methods](#goodscribe-methods)
+  - [Example usage within Hapi Manifest](#example-usage-within-hapi-manifest)
+
+
 # Good-Scribe
 
-File logging module for [good](https://github.com/hapijs/good) process monitoring. Good-Scribe is a stripped down version of [good-file](https://github.com/hapijs/good-file) that, when writing to file, automatically removes the `_object` from a `[Joi](https://github.com/hapijs/joi) validation failure` within the Hapi request lifecycle.
+File logging module for [good](https://github.com/hapijs/good) process monitoring. Good-Scribe is a stripped down version of [good-file](https://github.com/hapijs/good-file) that, when writing to file, automatically removes the `_object` from a [Joi](https://github.com/hapijs/joi) validation failure within the Hapi request lifecycle.
 
 
 ## Usage
@@ -10,7 +20,7 @@ File logging module for [good](https://github.com/hapijs/good) process monitorin
 ## Good Scribe
 ### new GoodScribe (options, events)
 
-creates a new GoodScribe object with the following arguments
+Creates a new GoodScribe object with the following arguments
 - `options` - specifications for the file that will be used. All file operations are done in "append" mode.
 	- `String` - a string that indicates the log file to use. Opened in "append" mode.
 - `events` - an object of key value pairs.
